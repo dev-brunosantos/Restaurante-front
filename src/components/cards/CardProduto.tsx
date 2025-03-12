@@ -1,11 +1,10 @@
 "use client"
 
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { FaRegHeart, FaHeart  } from 'react-icons/fa';
 
 interface CardProdutoProps {
-    // imagem: string;
     imagem: StaticImageData;
     altImagem: string;
     descricao: string;
@@ -25,7 +24,7 @@ export const CardProduto = ({ imagem, altImagem, descricao }: CardProdutoProps) 
 
     return (
         <div className="
-          w-[250px] h-[350px] p-5 border-2 flex-col items-center justify-evenly relative 
+          w-[250px] h-[370px] p-5 border-2 rounded-md flex-col items-center justify-evenly relative 
         ">
 
             <button className='absolute top-1 right-1' onClick={addAosFavoritos}>
@@ -49,7 +48,7 @@ export const CardProduto = ({ imagem, altImagem, descricao }: CardProdutoProps) 
                 </div>
 
                 <div className='w-full flex items-center justify-center'>
-                    <button className='border p-2 rounded-sm'>
+                    <button className='border p-2 rounded-sm text-[14px] cursor-pointer'>
                         Adicionar ao carrinho
                     </button>
                 </div>
