@@ -42,7 +42,7 @@ export const CardProduto = ({ imagem, altImagem, descricao }: CardProdutoProps) 
             </div>
 
             <div className='w-full flex flex-col items-center justify-evenly gap-4'>
-                <CardContent>
+                {/* <CardContent>
                     <p className='text-[14px] italic text-center'>
                         {descricao}
                     </p>
@@ -52,7 +52,15 @@ export const CardProduto = ({ imagem, altImagem, descricao }: CardProdutoProps) 
                     <button className='border p-2 rounded-sm text-[14px] cursor-pointer'>
                         Adicionar ao carrinho
                     </button>
-                </CardContent>
+                </CardContent> */}
+
+                <CardContent
+                    isDescription={true}
+                    descricao={descricao}
+                />
+                <CardContent
+                    isDescription={false}
+                />
             </div>
         </div>
     )
