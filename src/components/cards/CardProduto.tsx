@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
-import { FaRegHeart, FaHeart  } from 'react-icons/fa';
+import { FaRegHeart, FaHeart } from 'react-icons/fa';
+import { CardContent } from "./CardContent";
 
 interface CardProdutoProps {
     imagem: StaticImageData;
@@ -41,17 +42,17 @@ export const CardProduto = ({ imagem, altImagem, descricao }: CardProdutoProps) 
             </div>
 
             <div className='w-full flex flex-col items-center justify-evenly gap-4'>
-                <div className='w-full flex items-center justify-center'>
+                <CardContent>
                     <p className='text-[14px] italic text-center'>
                         {descricao}
                     </p>
-                </div>
+                </CardContent>
 
-                <div className='w-full flex items-center justify-center'>
+                <CardContent>
                     <button className='border p-2 rounded-sm text-[14px] cursor-pointer'>
                         Adicionar ao carrinho
                     </button>
-                </div>
+                </CardContent>
             </div>
         </div>
     )
