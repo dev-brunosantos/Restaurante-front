@@ -13,7 +13,7 @@ export const MenuPrincipal = () => {
             <ul className="w-full h-full flex items-center justify-evenly">
               <Link href='/'>Icício</Link>
               <Link href='/pages/produtos'>Produtos</Link>
-              <Link href='/pedidos'>Pedidos</Link>
+              <Link href='/pages/pedidos'>Pedidos</Link>
               <Link href=''>Contatos</Link>
             </ul>
           </nav>
